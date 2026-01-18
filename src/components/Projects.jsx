@@ -56,10 +56,10 @@ function Projects() {
     <section id="projects" className="py-24 space-y-10">
       {/* Header */}
       <div className="text-center space-y-4">
-        <h2 className="text-white text-3xl font-bold tracking-tight">
+        <h2 className="text-foreground text-3xl font-bold tracking-tight">
           Proyectos Destacados
         </h2>
-        <p className="text-slate-500">
+        <p className="text-muted-foreground">
           Algunos de mis trabajos más recientes
         </p>
       </div>
@@ -76,16 +76,16 @@ function Projects() {
           <CarouselContent className="-ml-4">
             {projects.map((project, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/2">
-                <Card className="bg-card-dark border-white/10">
+                <Card className="bg-card border-border">
                   <CardContent className="p-0">
                     {/* Imagen */}
-                    <div className="relative aspect-video w-full overflow-hidden bg-slate-800 rounded-t-xl">
+                    <div className="relative aspect-video w-full overflow-hidden bg-muted rounded-t-xl">
                       <img 
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card-dark via-card-dark/20 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
                       
                       {/* Icono esquina */}
                       <div className="absolute top-4 right-4 size-8 bg-primary/20 backdrop-blur-sm border border-primary/40 rounded-lg flex items-center justify-center">
@@ -95,7 +95,7 @@ function Projects() {
 
                     {/* Contenido */}
                     <div className="p-6 space-y-4">
-                      <h3 className="text-white text-xl font-bold hover:text-primary transition-colors">
+                      <h3 className="text-foreground text-xl font-bold hover:text-primary transition-colors">
                         {project.title}
                       </h3>
                       

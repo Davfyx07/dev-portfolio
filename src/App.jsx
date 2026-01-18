@@ -5,10 +5,12 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
+import ThemeToggle from './components/ThemeToggle'
 
 function App() {
   return (
     <div className="min-h-screen mesh-bg text-white">
+      <ThemeToggle />
       <Navbar />
       
       <main className="px-6 lg:px-40 max-w-[1200px] mx-auto w-full space-y-24">

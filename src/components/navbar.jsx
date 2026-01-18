@@ -66,7 +66,7 @@ function Navbar() {
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
       <nav 
         ref={navRef}
-        className="relative flex items-center gap-1 px-3 py-2 bg-card-dark/90 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl shadow-black/50"
+        className="relative flex items-center gap-1 px-3 py-2 bg-card/90 backdrop-blur-xl border border-border rounded-full shadow-2xl dark:shadow-black/50 shadow-black/20"
       >
         {/* Indicador deslizante (píldora animada) */}
         <div 
@@ -82,8 +82,8 @@ function Navbar() {
             onClick={() => handleClick(section.id)}
             className={`relative z-10 px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
               activeSection === section.id 
-                ? 'text-white' 
-                : 'text-slate-400 hover:text-white hover:scale-105'
+                ? 'text-primary-foreground dark:text-white' 
+                : 'text-muted-foreground hover:text-foreground hover:scale-105'
             }`}
           >
             {section.label}
