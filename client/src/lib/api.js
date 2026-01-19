@@ -23,7 +23,9 @@ export async function getSkills() {
 }
 
 export async function getHero() {
-  return fetchAPI('/hero?populate=*');
+  const data = await fetchAPI('/heroes?populate=*');
+  // Retornar el primer elemento si es un array
+  return data?.data?.[0] ? { data: data.data[0] } : data;
 }
 
 export async function getAboutMe() {
