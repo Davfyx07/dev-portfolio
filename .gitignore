@@ -74,8 +74,9 @@ server/exports
 server/.tmp/*.db*
 server/data.db*
 
-# Strapi uploads
-server/public/uploads
+# Strapi uploads (allow directory structure but ignore uploaded files)
+server/public/uploads/*
+!server/public/uploads/.gitkeep
 
 # Strapi config
 server/config/env/production/database.js
