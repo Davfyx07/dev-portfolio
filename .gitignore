@@ -57,3 +57,25 @@ yarn-error.log*
 # Optional
 .eslintcache
 .vercel
+
+############################
+# Strapi
+############################
+
+# Strapi build files
+server/.strapi
+server/build
+server/.cache
+server/.tmp
+server/dist
+server/exports
+
+# Strapi database (SQLite)
+server/.tmp/*.db*
+server/data.db*
+
+# Strapi uploads
+server/public/uploads
+
+# Strapi config
+server/config/env/production/database.js

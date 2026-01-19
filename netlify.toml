@@ -1,4 +1,6 @@
+# Frontend (React)
 [build]
+  base = "client"
   command = "npm run build"
   publish = "dist"
 
